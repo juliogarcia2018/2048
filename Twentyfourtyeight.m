@@ -21,7 +21,7 @@ newposition2 =randi(numel(Board));  % randomly chooses index where the new numbe
 
 if newnumber <= 5
     if Board(newposition) == 0      % assures that the index that was randomly chosen has a value of 0
-        Board(newposition) = 2000;  % changes that index value to the newnumber
+        Board(newposition) = 2;  % changes that index value to the newnumber
         Boardsecure =1;             % makes the while loop associated with Boardsecure end
     elseif Board(newposition) > 0   % stops it from overriding a value on the board that has already been created byb the loop
     end
